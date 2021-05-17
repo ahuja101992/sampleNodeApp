@@ -2,10 +2,10 @@ var express = require('express')
 var router = express.Router()
 
 var con = require('../dbCon')
-// con.connect(function(err) {
-//     if (err) throw err;
-//     console.log("Connected in route!");
-//   });
+con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected in route!");
+  });
 router.use(function timeLog (req, res,next) {
     console.log('Time: ', Date.now())
     next();
