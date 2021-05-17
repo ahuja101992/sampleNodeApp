@@ -6,8 +6,9 @@ var con = mysql.createConnection({
   user: process.env.USERNAME,
   password: process.env.PASSWORD
 });
-con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected in route!");
-  });
+// con.connect(function(err) {
+//     if (err) throw err;
+//     console.log("Connected in route!");
+//   });
+console.log("kjhkjkjjk");
 module.exports=con;
